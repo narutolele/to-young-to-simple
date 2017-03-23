@@ -1,0 +1,139 @@
+
+body{
+    margin: 0px 0px 0px 0px;
+}
+ul,ol{
+    list-style: none;
+    padding: 0px;
+}
+/**logo区**/
+.logo{
+    text-align: center;
+}
+.logo > .logo-img{
+    display: inline-block;
+    background-color:#d8d8d8;
+    border-radius: 36px; 
+    width: 72px;
+    height: 72px;   
+    margin-top: 60px;
+    
+}
+.logo > .logo-ul{
+    margin-top:28px;
+
+}
+.logo > .logo-ul > li{
+    display: inline-block;
+    background-color: #D8D8D8;
+    min-width: 128px;
+    line-height: 24px;
+    margin-left: 11px;
+    margin-right:11px; 
+    margin-bottom: 24px;
+
+}
+/**logo区结束**/
+/**介绍区**/
+.介绍{
+    background-color: #EFEFEF;
+    text-align: center;
+    padding-top: 46px;
+}
+.one-h2{
+    display: none;
+}
+.one-h2 h2{
+   padding: 0 2.75em 0 2.75em;
+}
+@media (min-width:600px){
+.one-h2{
+    display:block;
+}
+.two-h2{
+     display: none;
+}
+}
+.介绍 h2{
+    display: inline-block;
+    background: #D8D8D8;
+    border-radius:14px;
+    min-width: 200px;
+    line-height: 40px;
+    margin: 10px 0 10px 0;
+}
+.介绍 > .介绍段落{
+    padding:16px 0 34px 0; 
+}
+.介绍段落 > p{
+    background-color: #e8e8e8;
+    border-radius: 14px;
+    max-width:250px;
+    line-height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+}
+@media (min-width:600px){
+.介绍段落 > p{
+    max-width: none;
+    margin-right: 52px;
+    margin-left: 52px;
+}
+}
+/**介绍区结束**/
+/**描述区**/
+.描述{
+margin-left: 16px;
+margin-right: 16px;
+display: block;
+}
+.描述 > ol{
+margin-top: 42px;
+}
+@media (min-width:600px) {
+   .描述 > ol{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   } 
+   .描述 >ol>li{
+       width: calc(50% - 16px);
+     box-sizing: border-box;
+}
+}
+@media (min-width:1000px) {
+   .描述 >ol>li{
+       width: calc(33.333333% - 16px);
+     box-sizing: border-box;
+}
+}
+@media (min-width:1200px) {
+   .描述 >ol{
+max-width: 928px;
+margin-left: auto;
+margin-right: auto;
+}
+}
+.描述内容{
+margin-top: 32px;
+}
+.描述内容 .img{
+background: #d8d8d8;
+border-radius: 4px;
+height: 180px;/**如果这真的是一个图片,就不需要人添加宽高度了,会自己按比例算出来**/
+}
+.描述内容 h3{
+background:#bcbcbc;
+border-radius:4px;
+max-width: 204px;
+line-height: 24px;
+margin:20px 0 14px 0; 
+}
+.描述内容 p{
+   background:#ececec;
+   border-radius:4px;
+   line-height: 16px;
+   font-size: 14px;
+}
+/**描述区结束**/
